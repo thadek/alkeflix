@@ -1,7 +1,7 @@
 import { useState, useContext, createContext, useEffect, ReactNode } from 'react';
 import axios from 'axios';
 
-const API_URL = "http://challenge-react.alkemy.org";
+const API_URL = import.meta.env.VITE_ALKEMY_API_URL;
 
 interface IAuthContext {
     token: string | null;
@@ -35,12 +35,23 @@ function useProvideAuth() {
 
     const signin = async (email: string, password: string) => {
         try {
-            const api_call = await axios.post(API_URL, { email, password })
+          
+          
+          /*  const api_call = await axios.post(API_URL, { email, password })
             if(api_call.status === 200){
                 setToken(api_call.data.token);
                 sessionStorage.setItem("token", api_call.data.token);
+            }*/
+
+
+            //Simulo el login con un token fijo, PORQUE LA GENTE DE ALKEMY NO PONE HTTPS EN SU API
+            if(email === "challenge@alkemy.org" && password === "react"){
+                const sim_token = import.meta.env.VITE_SIM_TOKEN;
+                setToken(sim_token)
+                sessionStorage.setItem("token", sim_token)
             }
-            return {status: api_call.status, message: "Bienvenido!"}
+
+            return {status: 200, message: "Bienvenido!"}
         } catch (err:any) {
             
             return {status: err.response.status, message: "Error al iniciar sesión."}
