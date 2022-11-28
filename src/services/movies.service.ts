@@ -41,6 +41,7 @@ export const getMovie = async (id?: string) => {
     }
 }
 
+
 export const searchMovies = async (query: string, page?: number) => {
     try {
         const response = await axios({
