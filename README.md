@@ -5,4 +5,4 @@ Sitio que muestra información de peliculas. Proyecto ReactJS para alkemyLabs
 Desarrollado en ReactJS, utilizando Typescript.
 
 ## Demo
-https://alkeflix-azure.vercel.app/
+https://alkeflix.gpamic.ar
