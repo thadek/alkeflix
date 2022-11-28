@@ -13,7 +13,6 @@
     "@emotion/styled": "^11.10.5",
     "@mui/icons-material": "^5.10.15",
     "@mui/material": "^5.10.15",
-    "@sweetalert/with-react": "^0.1.1",
     "axios": "^1.1.3",
     "framer-motion": "^7.6.12",
     "notistack": "^2.0.8",
