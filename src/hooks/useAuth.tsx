@@ -1,7 +1,7 @@
 import { useState, useContext, createContext, useEffect, ReactNode } from 'react';
 import axios from 'axios';
 
-const API_URL = import.meta.env.VITE_ALKEMY_API_URL;
+const API_URL = "http://challenge-react.alkemy.org";
 
 interface IAuthContext {
     token: string | null;
