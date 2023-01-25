@@ -86,15 +86,17 @@ function Login(): JSX.Element {
                 <Grid item xs={0} sm={0} md={2} lg={4}>
 
                 </Grid>
-                <Grid item xs sm={12} md={8} lg={4}sx={{ display: 'flex', gap: '2em', flexDirection: 'column', alignItems: 'center', background: '#000000b0', color: '#fff', p: 3 }}>
+                <Grid item xs sm={12} md={8} lg={4}sx={{ display: 'flex', gap: '2em', flexDirection: 'column', background: '#000000b0', color: '#fff', p: 3 }}>
 
 
-                    <Typography variant="h4" sx={{ fontSize: '2.5em', marginTop: '1em' }}>Iniciar sesión</Typography>
+                    <Typography variant="h1" sx={{ fontSize: '2.5em', marginTop: '1em', textAlign:'center' }}><strong>¡Hola! | </strong>Iniciar sesión </Typography>
+                 
                     <form onSubmit={submitHandler} style={{ display: 'flex', flexDirection: 'column', gap: '1em', minWidth: '20em', padding: '3em' }}>
                         <TextField
                             id="email"
                             label="Email"
                             variant="filled"
+                            placeholder="challenge@alkemy.org..."
                         />
 
 
@@ -104,6 +106,7 @@ function Login(): JSX.Element {
                             label="Password"
                             variant="filled"
                             type="password"
+                            placeholder='react'
                         />
 
                         <Button color={'error'} variant={'outlined'} type="submit">Ingresar</Button>

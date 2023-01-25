@@ -3,15 +3,15 @@ import { motion } from "framer-motion"
 
 const pageVariants = {
     initial: {
-     
+      opacity:0,
       transform: "translate(-5px)"
     },
     in: {
-      
+      opacity:1,
       transform: "translate(0px)"
     },
     out: {
-      
+      opacity:1,
       transform: "translate(10px)"
     }
   };
@@ -19,7 +19,7 @@ const pageVariants = {
   const pageTransition = {
     type: 'spring',
     ease: 'linear',
-    duration: 1,
+    duration: 2,
     bounce:0.25
   }; 
 

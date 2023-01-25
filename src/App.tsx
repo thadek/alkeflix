@@ -14,7 +14,7 @@ import { AnimatePresence } from "framer-motion"
 import Loading from "./components/Loading";
 import FeaturedMovies from "./components/movies/Featured.movies";
 import SearchMovie from "./components/movies/Search.movie";
-
+import './index.css'
 
 
 function App() {
