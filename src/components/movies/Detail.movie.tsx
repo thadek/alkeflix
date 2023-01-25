@@ -1,4 +1,4 @@
-import { Grid, Typography, CardMedia } from '@mui/material'
+import { Grid, Typography} from '@mui/material'
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { getMovie } from '../../services/movies.service'
@@ -43,7 +43,7 @@ export default function DetailMovie(props: any): JSX.Element {
     }
 
     return (
-        <Grid container spacing={0} sx={{ background: `linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(53,34,198,0.47102591036414565) 100%),url(${img_url})`, minHeight: '100vh' }}>
+        <Grid container spacing={0} sx={{ background: `linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(53,34,198,0.47102591036414565) 100%),url(${img_url}),black`, minHeight: '100vh' }}>
 
             <>
 
