@@ -14,6 +14,7 @@ import { AnimatePresence } from "framer-motion"
 import Loading from "./components/Loading";
 import FeaturedMovies from "./components/movies/Featured.movies";
 import SearchMovie from "./components/movies/Search.movie";
+import Disclaimer from "./components/Disclaimer";
 import './index.css'
 
 
@@ -30,7 +31,8 @@ function App() {
           vertical: 'top',
           horizontal: 'center',
         }} preventDuplicate >
-          {isAuthenticated && <Header />}
+         
+          {isAuthenticated? <Header /> : <Disclaimer/>}
           <AnimatePresence initial={false}>
             <Routes location={location} key={location.pathname}>
 
