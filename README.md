@@ -7,7 +7,7 @@ Consiste en un sitio que muestra información sobre peliculas, consumiendo la AP
  🎈  Es mi primer proyecto desarrollado utilizando Typescript+ReactJS, con viteJS de entorno de trabajo.
 ##  ⚡ Live Demo
 
-### **[Demo](https://alkeflix.gpamic.ar)**
+### **[Demo](https://alkeflix-azure.vercel.app/)**
 
 *Test credentials:*
 🔒  **user** :  challenge@alkemy.org
